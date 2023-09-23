@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pense No Futuro, Esqueça o Grau Técnico</title>
     <style>
+        * html ul li {float: left;}
+        * html ul li {height: 1%;}
         *{
             margin: 0px;
-            padding: 0px;
+            padding: 0px; 
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
@@ -22,27 +24,36 @@
             background-image:linear-gradient(to top,#10BD47,#41E24E)
             
         }
-        header > nav{
+        header > nav {
             margin-top: 10px;
             display: inline-block;
             text-align: center;
             margin-bottom: 10px;
             
         }
+       
+     
+        ul#arquivos{display: flex; flex-direction: row;position: absolute ; justify-content: space-evenly;left: 0;right: 10px;top: 0;bottom: 690px; height: auto; width: auto;display: flex;justify-content: space-evenly;align-items: flex-end;
+        }
+ 
+        ul#arquivos> a { margin: 30px;}
+        ul#arquivos>ol{margin: 30px;}
+        
         header a{
             color: rgba(3, 7, 8, 0.767);
-            padding: 2px;
+            padding: 4px;
             text-decoration: none;
             font-weight: bold;
         }
         nav a:hover{
-            border-radius: 10px 10px 10px 10px;
+            border-radius: 5px 5px 5px 5px;
             color: rgb(219, 230, 223);
             background-color: rgb(23, 158, 68);
             transition-duration: .5;
         }
+        
         header>h1{
-            text-shadow: 0px 7px 4px black;
+            text-shadow: 0px 7px 5px black;
             color: aliceblue;
             padding-top: 30px;
             margin-bottom: 80px; 
@@ -58,6 +69,14 @@
             margin-right: 50px;
             border-radius:0px 0px 10px 10px;
         }
+       ul#arquivos>ol>ul{display: none;}
+       ul#arquivos>ol:hover >ul{display: block;}
+       ul#arquivos>ol>ul{position: absolute;display: none; flex-direction: row;justify-content: center; 
+        height: 100px;width: 100px;background-color: #10BD47;
+        border-radius: 0px 0px 4px 4px;border: 1px solid black;
+        }
+        
+        ul#arquivos>ol>ul>a{display: flex;margin: 4px;height: auto; width: auto;
     </style>
 </head>
 <body>
@@ -65,11 +84,24 @@
         <h1>Pense No Futuro, Esqueça o Grau Técnico</h1>
         
         <nav>
-            <a id="video" href="#">Arquivos</a>
-            <a href="#">Vídeos</a>
-            <a href="paisagem-p.png" target="_blank">Imagens</a>
-            <a href="#">Professores</a>
-        </nav>
+            <ul id="arquivos">
+                <a href="#">Arquivos</a>
+                <a href="#">Vídeos</a>
+                <a href="paisagem-p.png" target="_blank">Imagens</a>
+                <ol><a href="#">Professores</a>
+                    <ul >
+                        <a href="#">Wêdja</a>
+                        <a href="#">Claudiane</a>
+                        <a href="#">Matheus</a>
+                    </ul>
+                </ol>
+            </ul>
+            
+        </nav >
+         
+                
+            
+        
     </header>
     <main>
         <section>
@@ -86,5 +118,6 @@
     <footer>
         Desenvolvido #
     </footer>
+    
 </body>
 </html>
