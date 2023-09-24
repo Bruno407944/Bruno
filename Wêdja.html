@@ -19,17 +19,14 @@
             min-width: 100px;
             text-align: center;       
             }
-    picture{display: flex;position: absolute;width: auto;height: auto;}        
-    img{display: flex;position:absolute;right: 0%; left: 0%;height: auto; }
+    picture{display: block; padding: 0px;}        
+    img{display: flex;position:relative;margin: auto;}
 </style>
 <body>
     
     <nav>
        <picture>
-        
-        <source media="(max-width: 320px)" srcset="img p.png" type="image/png">
-        <source media="(max-width: 720px)" srcset="img m.png" type="image/png">
-        <img src="img mm.png" alt="Photo">
+        <img src="img m.png" alt="Photo">
         </picture> 
         
         
