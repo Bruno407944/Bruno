@@ -16,17 +16,17 @@
         header {
             border-bottom-right-radius: 10px;
             min-height: 230px;
-            min-width: 380px;
+            min-width: 100px;
             text-align: center;       
             background-image:linear-gradient(to top,#10BD47,#41E24E);
              
            }
-        header > nav {
+        header > nav {position: relative;
             margin-top: 10px;
             display: inline-block;
             text-align: center;
             margin-bottom: 10px;
-
+            z-index: 1;
         }
         ul#arquivos{display: flex; flex-direction: row;  justify-content: space-evenly;left: 0;right: 0px;top: 0;bottom: 690px; height: auto; width: auto;display: flex;justify-content: space-evenly;align-items: flex-end;
         }
@@ -72,7 +72,7 @@
         border-radius: 0px 0px 4px 4px;border: 1px 2px solid black;
         }
         ul#arquivos>ol>ul>a{display: flex;margin: 4px;height: auto; width: auto;}
-        img{ transform: translate(320px, -160px);position: absolute;z-index: 1;
+        img{ transform: translate(300px, -160px);position: absolute;
         }
     </style>
 </head>
