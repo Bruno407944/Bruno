@@ -21,13 +21,12 @@
             }
     picture{display: block; padding: 0px;}        
     img{display: flex;position:relative;margin: auto;}
-    ul{text-align: justify; margin: 25px 0px 0px 41px ;}
-    menu{margin: auto;
-            border-bottom-right-radius: 10px;
-            min-height: 230px;
-            min-width: 100px;
-            text-align: center;       
-            background-color: chartreuse; margin: 23px 43px 0px }
+    menu>ul{
+          padding: 50px;
+         max-width: 1700px; height: 300px; display: flex; justify-content: center;
+         align-items: start;flex-wrap: wrap;}
+    .itens{border: 1px solid black;height: 20px; width:auto; padding: 10px;}
+    
 </style>
 <body>
     
@@ -36,11 +35,12 @@
         <img src="img m.png" alt="Photo">
        </picture> 
         <menu>
-            <ul><li style="margin: -25px 0px 24px -9px ;"><ins>Matérias:</ins></li>
+            <ul class="Mat">
                 <ol>
-                    <li><a href="#">Geração e Distribuição de Enégia</a></li>
-                    <li><a href="#">Distribuição Elétrica em Média Tensão</a></li>
-                    <li><a href="#">Elementos de Automação</a></li>
+                    <li style="justify-content: center; align-items: center;display: flex; margin:0px 10px 10px 10px ;"><ins>Matérias:</ins></li>
+                    <nav class="itens"><a href="#">Geração e Distribuição de Enégia</a></nav>
+                    <nav class="itens"><a href="#">Distribuição Elétrica em Média Tensão</a></nav>
+                    <nav class="itens"><a href="#">Elementos de Automação</a></nav>
                 </ol>
             </ul>
         </menu>
