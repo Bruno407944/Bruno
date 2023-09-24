@@ -13,7 +13,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        header {
+        header {box-shadow: 1px 11px 15px 1px;
             border-bottom-right-radius: 10px;
             min-height: 230px;
             min-width: 100px;
@@ -34,15 +34,15 @@
         ul#arquivos> a { margin: 10px;}
         ul#arquivos>ol{margin: 15px;}
         
-        header a{
+        header a{text-shadow: -2px 5px 4px;
             color: rgba(3, 7, 8, 0.767);
             padding: 4px;
             text-decoration: none;
             font-weight: bold;
         }
-        nav a:hover{
+        nav a:hover{text-shadow: 0px 0px 0px;
             border-radius: 5px 5px 5px 5px;
-            color: rgb(219, 230, 223);
+            color: rgb(255, 255, 255);
             background-color: rgb(23, 158, 68);
             transition-duration: .5;
         }
@@ -55,14 +55,14 @@
             
            
         }
-        main{ 
+        main{
             background-color: rgba(15, 189, 23, 0.774);
             min-width: 100px;
             max-width: auto;
             margin-bottom: 20px;
             padding: 20px;
             margin-left: 30px;
-            margin-right: 50px;
+            margin-right: 30px;
             border-radius:0px 0px 10px 10px;
         }
        ul#arquivos>ol>ul{display: none;}
@@ -73,17 +73,18 @@
         }
         ul#arquivos>ol>ul>a{display: flex;margin: 4px;height: auto; width: auto;}
         img{ transform: translate(275px, -160px);position: absolute;
-        }
-        img#amigos{position: absolute;transform: translate(-40px,-120px);border-radius: 150px;}
-        img.logo{position: absolute;transform: translate(-90px,-110px);border-radius: 150px}
-        ul#lista{display: block;left: 20px;position: relative;}
+        }   
+        img.logo{position: absolute;transform: translate(-90px,-110px);border-radius: 150px;}
+        ul#lista{display: block;left: 0px;position: relative;}
+
+        
     </style>
 </head>
 <body>
     <header>
         <h1> Pense No Futuro, Esqueça o Grau Técnico </h1>
         
-        <img src="boneco1.png" alt="Macote do Grau">
+        <img src="boneco1.png" alt="Mascote do Grau">
         <img class="logo" src="logo.png" alt="amigos">
         <nav>
             <ul id="arquivos">
@@ -130,10 +131,11 @@
                 <li>Victor</li>
                 <li>Willes Júnior</li>
             </ul>
+
      </ol>
     </main>
     <footer>
-        Desenvolvido #
+        <nav class="footer">Desenvolvido #</nav>
     </footer>
 </body>
 </html>
